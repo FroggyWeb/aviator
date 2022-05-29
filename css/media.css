@@ -1,0 +1,131 @@
+@media screen and (min-width: 767px) {
+    .spec__body {
+        grid-template-columns: calc(50% + var(--lg)) 50%;
+    }
+    .spec__item-main {
+        margin-right: var(--lg);
+        padding-right: var(--lg);
+        border-right: 1px solid;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .more-clip__link {
+        font-size: 18px;
+    }
+
+    .slider .slick-arrow {
+        display: block;
+        width: auto;
+        height: auto;
+        margin-top: 0;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    .slider .slick-arrow:before {
+        font-size: 26px;
+    }
+    .slider .slick-next {
+        right: 13px;
+    }
+    .slider .slick-prev {
+        left: 13px;
+    }
+    .slider .slider-dots{
+        position: relative;
+        width: 50%;
+        margin-left: auto;
+    }
+    .slider .slider-cnt-center {
+        height: 100%;
+        display: flex;
+        height: 100%;
+        flex-direction: columns;
+        align-items: center;
+    }
+
+    .gift-slider__item {
+    }
+
+    .gift-slider__cnt {
+        width: 50%;
+        font-size: 18px;
+        margin-left: auto;
+    }
+
+    .gift-slider__cnt-wrap {
+        padding: 10vw 40px;
+        max-width: 540px;
+        margin: auto;
+    }
+    .brandavia {
+        padding: 40px 0 40%;
+    }
+    .brandavia__cnt p {
+        font-size: 20px;
+    }
+
+    .sideimg-slider__item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .sideimg-slider__img {
+        order: -1;
+        position: relative;
+    }
+    .sideimg-slider__img img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    } 
+    .nightview__cnt {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+    .nightview__cnt .nightview__cnt-col:nth-child(even) {
+        text-align: right;
+    }
+
+    .tech__body {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .video__title {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width:1023px) {
+    .specification {
+        font-size: 16px;
+    }
+    .spec__item-main {
+        display: flex;
+        gap: var(--lg);
+        justify-content: space-between;
+        flex-direction: row;
+        flex: 1;
+    }
+    .spec__txt-col {
+       flex-basis: 250px;
+    }
+    .spec__title {
+        font-size: 24px;
+    }
+    .spec__txt p {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+   
+}
