@@ -1,3 +1,21 @@
+$('.intro-card-slider-left').slick({
+  dots: true,
+  speed: 1000,
+  slidesToShow: 1,
+  fade: true,
+  appendDots: '.intro-card-slider__dots',
+  appendArrows: '.intro-card-slider__arrow',
+  asNavFor: '.intro-card-slider-right'
+});
+$('.intro-card-slider-right').slick({
+  dots: false,
+  speed: 1000,
+  slidesToShow: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.intro-card-slider-left'
+});
+
 $('.life-slider').slick({
   dots: false,
   infinite: true,

@@ -24,7 +24,8 @@
         transform: translateY(-50%);
         z-index: 1;
     }
-    .slider .slick-arrow:before {
+    .slider .slick-arrow:before,
+    .intro-card .slick-arrow:before {
         font-size: 26px;
     }
     .slider .slick-next {
@@ -47,6 +48,7 @@
     }
 
     .gift-slider__item {
+        
     }
 
     .gift-slider__cnt {
@@ -102,6 +104,30 @@
     }
 }
 
+@media screen and (min-width: 769px) {
+    .intro-card {
+        position: relative;
+        padding-bottom: 40px;
+    }
+    .intro-card-slider__dots {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .intro-card__cnt {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .intro-card__cnt .slider {
+        flex: 0 0 33%;
+    }
+}
+
 @media screen and (min-width:1023px) {
     .specification {
         font-size: 16px;
@@ -126,6 +152,5 @@
     .title {
         font-size: 36px;
     }
-
    
 }
