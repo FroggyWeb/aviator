@@ -7,6 +7,7 @@ $('.intro-card-slider-left').slick({
   appendArrows: '.intro-card-slider__arrow',
   asNavFor: '.intro-card-slider-right'
 });
+
 $('.intro-card-slider-right').slick({
   dots: false,
   speed: 1000,
@@ -14,6 +15,28 @@ $('.intro-card-slider-right').slick({
   arrows: false,
   fade: true,
   asNavFor: '.intro-card-slider-left'
+});
+
+$('.variant-slider').slick({
+  speed: 1000,
+  dots: true,
+  infinite: false,
+  // centerMode: true,
+  // slide
+  // variableWidth: true,
+  slidesToShow: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        variableWidth: true,
+        focusOnSelect: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 3,
+      }
+    }
+  ]
 });
 
 $('.life-slider').slick({

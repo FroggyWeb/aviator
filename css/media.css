@@ -107,7 +107,6 @@
 @media screen and (min-width: 769px) {
     .intro-card {
         position: relative;
-        padding-bottom: 40px;
     }
     .intro-card-slider__dots {
         position: absolute;
@@ -115,6 +114,10 @@
         bottom: 0;
         text-align: center;
         width: 100%;
+        z-index: -1;
+    }
+    .intro-card-slider__dots .slick-dots {
+        bottom: 0;
     }
     .intro-card__cnt {
         position: relative;
@@ -125,6 +128,9 @@
 
     .intro-card__cnt .slider {
         flex: 0 0 33%;
+    }
+    .intro-card-slider-right {
+        display: block;
     }
 }
 
@@ -152,5 +158,30 @@
     .title {
         font-size: 36px;
     }
-   
+    .shipping-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .shipping-bar .shipping-bar__item {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .shipping-bar {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .variants .wrap-prod {
+        padding: 0;
+    }
+    .variant-slider {
+        padding: 0;
+    }
+    .variant-slider__item {
+        width: 250px;
+    }
 }
