@@ -71,7 +71,6 @@ $('.gift-slider').slick({
   arrows: false,
   speed: 300,
   slidesToShow: 1,
-  appendDots: '.gift-slider .slider-dots',
   slide: '.gift-slider__item',
   mobileFirst: true,
   responsive: [{
@@ -79,16 +78,25 @@ $('.gift-slider').slick({
     settings: {
       arrows: true,
       dots: false,
+      appendDots: '.gift-slider .slider-dots',
     }
   }]
 });
 
 $('.sideimg-slider').slick({
+  arrows: false,
   dots: true,
   speed: 300,
   slidesToShow: 1,
-  appendDots: '.sideimg-slider .slider-dots',
-  slide: '.sideimg-slider__item'
+  slide: '.sideimg-slider__item',
+  mobileFirst: true,
+  responsive: [{
+    breakpoint: 767,
+    settings: {
+      arrows: true,
+      appendDots: '.sideimg-slider .slider-dots',
+    }
+  }]
 });
 
 $('.video-slider').slick({
