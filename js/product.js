@@ -3,9 +3,17 @@ $('.intro-card-slider-left').slick({
   speed: 1000,
   slidesToShow: 1,
   fade: true,
-  appendDots: '.intro-card-slider__dots',
-  appendArrows: '.intro-card-slider__arrow',
-  asNavFor: '.intro-card-slider-right'
+  asNavFor: '.intro-card-slider-right',
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        appendDots: '.intro-card-slider__dots',
+        appendArrows: '.intro-card-slider__arrow',
+      }
+    }
+  ]
 });
 
 $('.intro-card-slider-right').slick({
@@ -40,19 +48,39 @@ $('.variant-slider').slick({
 });
 
 $('.life-slider').slick({
-  dots: false,
+  arrows: false,
+  dots: true,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  variableWidth: true
+  variableWidth: false,
+  mobileFirst: true,
+  slide: '.life-slider__slide',
+  responsive: [{
+    breakpoint: 767,
+    settings: {
+      arrows: true,
+      dots: false,
+      variableWidth: true,
+    }
+  }]
 });
 
 $('.gift-slider').slick({
   dots: true,
+  arrows: false,
   speed: 300,
   slidesToShow: 1,
   appendDots: '.gift-slider .slider-dots',
-  slide: '.gift-slider__item'
+  slide: '.gift-slider__item',
+  mobileFirst: true,
+  responsive: [{
+    breakpoint: 767,
+    settings: {
+      arrows: true,
+      dots: false,
+    }
+  }]
 });
 
 $('.sideimg-slider').slick({

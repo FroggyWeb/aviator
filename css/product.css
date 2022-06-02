@@ -160,6 +160,10 @@ a.crumbs__link:hover {
     gap: 20px;
 }
 
+.intro-card-slider__slide img {
+    margin: auto;
+}
+
 .specification {
     text-align: center;
     line-height: 1.2;
@@ -344,26 +348,30 @@ a.crumbs__link:hover {
     margin-top: var(--lg);
 }
 
+.life-slider__title {
+    text-transform: uppercase;
+    font-size: 26px;
+    text-align: center;
+    max-width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    color: #fff;    
+}
+
 .gift-slider {
     position: relative;
 }
 
-.gift-slider__item {}
-
 .gift-slider__img img {
     position: absolute;
     z-index: -1;
-    top: 0;
-    left: 0;
-    max-width: none;
-    width: 100%;
-    height: 100%;
-    max-width: none;
-    object-fit: cover;
 }
 
-.gift-slider__cnt {
-
+.slider img {
+    display: block;
 }
 
 .slider-cnt-center {
@@ -371,7 +379,39 @@ a.crumbs__link:hover {
 }
 
 .slider .slick-arrow {
-    display: none;
+    display: block;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slider .slick-arrow:before,
+.intro-card .slick-arrow:before {
+    font-size: 26px;
+}
+
+.slider .slick-next {
+    right: 13px;
+}
+
+.slider .slick-prev {
+    left: 13px;
+}
+
+.slider .slider-dots {
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+}
+
+.slider .slider-cnt-center {
+    height: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: columns;
+    align-items: center;
 }
 
 .slider .slick-dots li,
@@ -390,6 +430,17 @@ a.crumbs__link:hover {
 .intro-card .slick-dots .slick-active {
     background-color: #000;
 }
+
+.slider--while .slick-dots {
+    color: #fff;
+}
+.slider--while .slick-arrow:before {
+    color: #fff
+}
+.slider--while .slick-dots .slick-active {
+    background-color: #fff;
+}
+
 .slider .slick-track {
     display: flex;
 }
@@ -608,6 +659,7 @@ a.crumbs__link:hover {
 
 .variants {
     background-color: #fff;
+    border: 1px solid transparent;
 }
 
 .variant-slider {
@@ -626,4 +678,13 @@ a.crumbs__link:hover {
 }
 .variant-slider .slick-next {
     right: 4px;
+}
+.variant-slider .slick-dots {
+    bottom: 10px;
+}
+.variants-count {
+    text-transform: uppercase;
+    margin: 1em 0 -1em;
+    position: relative;
+    z-index: 101;
 }
