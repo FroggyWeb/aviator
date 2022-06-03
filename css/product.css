@@ -102,6 +102,63 @@ img {
     padding-bottom: calc(3*var(--lg));
 }
 
+.btn--outline {
+    border: 2px solid;
+    background: transparent;
+    color: #000;
+}
+.btn--invert {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn--invert:hover {
+    color: #fff;
+}
+
+.product-header {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 3001;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.product-header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-header__nav {}
+
+.product-header__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+.product-heder__right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.product-header__desktop {
+    display: none;
+}
+
+.product-header .price {
+    margin-right: auto;
+}
+
+.product-header__btn {
+    display: flex;
+    gap: 20px;
+}
+
 .crumbs {
     color: #999;
 }
@@ -196,7 +253,7 @@ a.crumbs__link:hover {
     padding: 10px 0;
 }
 
-.specification__price {
+.price {
     font-size: 22px;
     color: var(--c-light);
 }
@@ -230,7 +287,7 @@ a.crumbs__link:hover {
     margin-bottom: 1em;
 }
 
-.link-triangle-wrap {}
+
 
 .link-triangle {
     text-decoration: none;
@@ -531,6 +588,10 @@ a.crumbs__link:hover {
     color: #fff;
 }
 
+.slider-title--sub {
+    font-size: .75em;
+}
+
 .nightview {
     background-color: #000;
     color: #fff;
@@ -629,6 +690,10 @@ a.crumbs__link:hover {
     color: #C4C4C4;
 }
 
+.video-link {
+    text-decoration: none;
+    position: relative;
+}
 
 .video__img {
     width: 100%;
@@ -642,21 +707,21 @@ a.crumbs__link:hover {
 
 .video__title {
     font-size: 24px;
-    position: absolute;
-    bottom: 20px;
-    width: 80%;
-    left: 50%;
-    margin: auto;
-    transform: translateX(-50%);
+    text-decoration: none;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
 }
 
 .video__title__sub {
     font-size: .75em;
 }
 
-.video-slider .video__title {
-    bottom: 60px;
+.sideimg-slider__cnt .quote {
+    margin: 20px auto;
+    width: 70px;
 }
+
 
 .variants {
     background-color: #fff;
@@ -688,4 +753,36 @@ a.crumbs__link:hover {
     margin: 1em 0 -1em;
     position: relative;
     z-index: 101;
+}
+
+.aviator{
+    position: relative;
+}
+
+.aviator__cnt {
+    text-align: center;
+    color: #fff;
+    padding: 100vw 40px 40vw;
+}
+
+.aviator__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.aviator__logo {
+    margin-bottom: 60px;
+}
+
+.aviator__link {}
+
+.aviator__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }

@@ -83,7 +83,7 @@ $('.gift-slider').slick({
   }]
 });
 
-$('.sideimg-slider').slick({
+$('.design-slider').slick({
   arrows: false,
   dots: true,
   speed: 300,
@@ -94,17 +94,41 @@ $('.sideimg-slider').slick({
     breakpoint: 767,
     settings: {
       arrows: true,
-      appendDots: '.sideimg-slider .slider-dots',
+      appendDots: '.design-slider .slider-dots',
+    }
+  }]
+});
+
+$('.people-slider').slick({
+  arrows: false,
+  dots: true,
+  speed: 300,
+  slidesToShow: 1,
+  slide: '.sideimg-slider__item',
+  mobileFirst: true,
+  responsive: [{
+    breakpoint: 767,
+    settings: {
+      arrows: true,
+      appendDots: '.people-slider .slider-dots',
     }
   }]
 });
 
 $('.video-slider').slick({
   dots: true,
+  arrows: false,
   speed: 300,
   slidesToShow: 1,
-  appendDots: '.video-slider .slider-dots-full',
-  slide: '.video-slider__item'
+  // appendDots: '.video-slider .slider-dots-full',
+  slide: '.video-slider__item',
+  mobileFirst: true,
+  responsive: [{
+    breakpoint: 767,
+    settings: {
+      arrows: true,
+    }
+  }]
 });
 
 ///more text

@@ -20,6 +20,25 @@
 
 <body>
     <!-- begin old header-->
+    <div class="product-header">
+        <div class="wrap-prod">
+            <div class="product-header__wrap">
+                <div class="product-header__nav product-header__desktop">
+                    <a href="#" class="product-header__link">specifications</a>
+                    <a href="#" class="product-header__link">story</a>
+                    <a href="#" class="product-header__link">features</a>
+                </div>
+                <div class="product-heder__right">
+                    <div class="price">1’200 CHF</div>
+                    <div class="аvailable аvailable-true">Available</div>
+                    <div class="product-header__btn">
+                        <a href="#" class="btn">add to cart</a>
+                        <a href="#" class="btn btn--outline product-header__desktop">buy by phone</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="header-fixed">
 
         <div class="header-pr js-header-pr">
@@ -732,7 +751,7 @@
                         <div class="specification__title-mark">M.2.30.0.220.6</div>
                     </div>
                     <div class="specification__info">
-                        <div class="specification__price">1'200 CHF</div>
+                        <div class="specification__price price">1'200 CHF</div>
                         <p>(incl. all taxes and shipping charges) 5 monthly instalments of <strong>CHF 50.40</strong>
                             with Klarna. <a href="#">More info</a></p>
                         <div class="specification__аvailable аvailable аvailable-true">Available</div>
@@ -1050,7 +1069,7 @@
         <!-- end brandavia -->
 
         <!-- begin sideimg-slider -->
-        <div class="slider sideimg-slider slider-mob-btn-top">
+        <div class="slider sideimg-slider design-slider slider-mob-btn-top">
             <div class="sideimg-slider__item">
                 <div class="sideimg-slider__cnt">
                     <h3 class="title slider-title">DESIGN TIPS</h3>
@@ -1348,16 +1367,17 @@
         <!-- end tech -->
         <!-- begin video-slider -->
         <div class="slider video-slider">
-            <a href="#" class="video-slider__item">
+            <a href="#" class="video-slider__item video-link">
+                <div class="video__title">
+                    <div class="video__title__sub">TALKING ABOUT WATCHES</div>
+                    WITH PROFESSIONAL AIRLINES PILOT JOHN SMITH
+                </div>
                 <div class="video">
                     <picture>
                         <img class="video__img" src="img/content/video_bg.jpg"
                             srcset="img/content/video_bg@2x.jpg 2x, img/content/video_bg@3x.jpg 3x" alt="">
                     </picture>
-                    <div class="video__title">
-                        <div class="video__title__sub">TALKING ABOUT WATCHES</div>
-                        WITH PROFESSIONAL AIRLINES PILOT JOHN SMITH
-                    </div>
+                    
                     <div class="play">
                         <svg class="icon">
                             <use xlink:href="/img/sprite.svg#icons_play"></use>
@@ -1365,16 +1385,17 @@
                     </div>
                 </div>
             </a>
-            <a href="#" class="video-slider__item">
+            <a href="#" class="video-slider__item video-link">
+                <div class="video__title">
+                    <div class="video__title__sub">TALKING ABOUT WATCHES</div>
+                    WITH PROFESSIONAL AIRLINES PILOT JOHN SMITH
+                </div>
                 <div class="video">
                     <picture>
                         <img class="video__img" src="img/content/video_bg.jpg"
                             srcset="img/content/video_bg@2x.jpg 2x, img/content/video_bg@3x.jpg 3x" alt="">
                     </picture>
-                    <div class="video__title">
-                        <div class="video__title__sub">TALKING ABOUT WATCHES</div>
-                        WITH PROFESSIONAL AIRLINES PILOT JOHN SMITH
-                    </div>
+                    
                     <div class="play">
                         <svg class="icon">
                             <use xlink:href="/img/sprite.svg#icons_play"></use>
@@ -1382,9 +1403,56 @@
                     </div>
                 </div>
             </a>
+            
             <div class="slider-dots-full"></div>
         </div>
         <!-- end video-slider -->
+        <!-- begin people slider -->
+        <div class="slider sideimg-slider people-slider slider-mob-btn-top">
+            <div class="sideimg-slider__item">
+                <div class="sideimg-slider__cnt">
+                    <h3 class="title slider-title">
+                        TESTIMONIAL ONE
+                        <div class="slider-title--sub">CREATIVE DIRECTOR</div>
+                    </h3>
+                    <img class="quote" src="img/quote.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna
+                        aliqua.</p>
+                    <a class="btn" href="#">READ MORE</a>
+                </div>
+                <div class="sideimg-slider__img">
+                    <picture>
+                        <source media="(min-width: 767px)"
+                            srcset="img/content/director-768.jpg, img/content/director-768@2x.jpg 2x, img/content/director-768@3x.jpg 3x">
+                        <img src="img/content/director.jpg" srcset="img/content/director@2x.jpg 2x, img/content/director@3x.jpg 3x, "
+                            alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+        <!-- end people slider -->
+        <!-- begin aviator brand -->
+        <div class="aviator">
+            <div class="aviator__cnt">
+                <div class="aviator__title">NOW BOARDING IN FIRST CLASS</div>
+                <div class="aviator__logo">
+                    <img src="img/content/Douglas_logo.png" alt="">
+                </div>
+                <a href="#" class="aviator__link btn btn--outline btn--invert">DISCOVER THE COLLECTION</a>
+            </div>
+                <picture>
+                    <source media="(min-width: 1441px)"
+                        srcset="img/content/avaitor2-1920.jpg, img/content/avaitor2-1920@2x.jpg 2x, img/content/avaitor2-1920@3x.jpg 3x">
+                    <source media="(min-width: 769px)"
+                        srcset="img/content/avaitor2-1440.jpg, img/content/avaitor2-1440@2x.jpg 2x, img/content/avaitor2-1440@3x.jpg 3x">
+                    <source media="(min-width: 768px)"
+                        srcset="img/content/avaitor2-768.jpg, img/content/avaitor2-768@2x.jpg 2x, img/content/avaitor2-768@3x.jpg 3x">
+                    <img class="aviator__img" src="img/content/avaitor2.jpg" srcset="img/content/avaitor2@2x.jpg 2x, img/content/avaitor2@3x.jpg 3x, " alt="">
+                </picture>
+        </div>
+        <!-- end aviator brand -->
     </div>
 
     <script src="https://aviatorwatch.swiss/assets/template/js/jquery-3.5.1.min.js?ver=1590398381"></script>

@@ -90,6 +90,22 @@
     .life-slider__title {
         font-size: 36px;
     }
+    .video__title {
+        position: absolute;
+        bottom: 40px;
+        width: 80%;
+        left: 50%;
+        margin: auto;
+        transform: translateX(-50%);
+        color: #fff;
+        max-width: none;
+    }
+    .aviator__cnt{
+        padding: 25vw 40px 10vw;
+    }
+    .aviator__title {
+        font-size: 36px;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -158,6 +174,11 @@
     .title {
         font-size: 36px;
     }
+
+    .product-header__desktop {
+        display: block;
+    }
+    
 }
 
 @media screen and (min-width: 1280px) {
@@ -182,6 +203,9 @@
     .variants-count {
         margin-left: var(--lg);
     }
+    .product-heder__right {
+        flex: 1;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -199,6 +223,7 @@
         width: 50%;
         margin-left: auto;
     }
+    
 }
 
 @media screen and (max-width: 769px) {
