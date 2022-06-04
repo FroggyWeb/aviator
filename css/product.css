@@ -1,6 +1,6 @@
 @font-face {
     font-family: "proximanovaregular";
-    src: url("/fonts/proximanovaregular.woff2") format("woff2"), url("/fonts/proximanovaregular.woff") format("woff");
+    src: url("../fonts/proximanovaregular.woff2") format("woff2"), url("../fonts/proximanovaregular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "ProximaNova-Bold";
-    src: url("/fonts/ProximaNova-Bold.woff2") format("woff2"), url("/fonts/ProximaNova-Bold.woff") format("woff");
+    src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
     font-display: swap
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "proximasoft";
-    src: url("/fonts/proximasoftregular.woff2") format("woff2"), url("/fonts/proximasoftregular.woff") format("woff");
+    src: url("../fonts/proximasoftregular.woff2") format("woff2"), url("../fonts/proximasoftregular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: "proximasoftsemibold";
-    src: url("/fonts/proximasoftsemibold.woff2") format("woff2"), url("/fonts/proximasoftsemibold.woff") format("woff");
+    src: url("../fonts/proximasoftsemibold.woff2") format("woff2"), url("../fonts/proximasoftsemibold.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: "proximasoftsemibold";
-    src: url("/fonts/proximasoftsemibold.woff2") format("woff2"), url("/fonts/proximasoftsemibold.woff") format("woff");
+    src: url("../fonts/proximasoftsemibold.woff2") format("woff2"), url("../fonts/proximasoftsemibold.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -42,7 +42,7 @@
 
 @font-face {
     font-family: "avia";
-    src: url("/fonts/avia.woff") format("woff");
+    src: url("../fonts/avia.woff") format("woff");
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -117,13 +117,9 @@ img {
 }
 
 .product-header {
-    position: fixed;
-    width: 100%;
     padding: 10px 0;
-    z-index: 3001;
-    top: 0;
-    left: 0;
     background-color: #fff;
+    font-size: 14px;
 }
 
 .product-header__wrap {
@@ -132,12 +128,12 @@ img {
     justify-content: space-between;
 }
 
-.product-header__nav {}
 
 .product-header__link {
     text-transform: uppercase;
     text-decoration: none;
     margin-right: 1em;
+    font-family: var(--f-bold);
 }
 
 .product-heder__right {
@@ -172,11 +168,9 @@ img {
     content: "";
     display: inline-block;
     width: 1px;
-    height: 16px;
-    vertical-align: middle;
+    height: 13px;
     background-color: #999;
     position: relative;
-    bottom: .25em;
     margin: 0 .5em;
 }
 
@@ -322,6 +316,10 @@ a.crumbs__link:hover {
     text-transform: uppercase;
 }
 
+.add-gift .icon {
+    margin-bottom: 0.25em;
+}
+
 .specification__button {
     margin: 20px 0;
 }
@@ -437,7 +435,7 @@ a.crumbs__link:hover {
     text-align: center;
 }
 
-.slider .slick-arrow {
+.slick-arrow {
     display: block;
     width: auto;
     height: auto;
@@ -446,9 +444,10 @@ a.crumbs__link:hover {
     z-index: 1;
 }
 
-.slider .slick-arrow:before,
-.intro-card .slick-arrow:before {
-    font-size: 26px;
+.slick-arrow:before,
+.slick-arrow:after {
+    font-size: 36px;
+    z-index: 1;
 }
 
 .slider .slider-cnt-center {
@@ -655,6 +654,10 @@ a.crumbs__link:hover {
 .tech__body-rtl .tech__img{
     order: -1
 }
+.tech__cnt {
+    max-width: 500px;
+    margin: auto;
+}
 
 .video-slider {
     position: relative;
@@ -736,9 +739,7 @@ a.crumbs__link:hover {
     display: block;
     z-index: 1;
 }
-.variant-slider .slick-arrow:before {
-    font-size: 26px;
-}
+
 .variant-slider .slick-prev {
     left: 0;
 }
