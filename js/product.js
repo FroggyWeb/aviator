@@ -1,5 +1,6 @@
 $('.intro-card-slider-left').slick({
   dots: true,
+  arrows: false, 
   speed: 1000,
   slidesToShow: 1,
   fade: true,
@@ -9,6 +10,7 @@ $('.intro-card-slider-left').slick({
     {
       breakpoint: 769,
       settings: {
+        arrows: true,
         appendDots: '.intro-card-slider__dots',
         appendArrows: '.intro-card-slider__arrow',
       }
