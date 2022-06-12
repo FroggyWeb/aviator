@@ -27,6 +27,22 @@ $('.intro-card-slider-right').slick({
   asNavFor: '.intro-card-slider-left'
 });
 
+//variants
+const variantFloat = $('.variants').clone().addClass('variants--float')
+variantFloat.appendTo('body');
+
+$('.link-variants').on('click', function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+  variantFloat.toggleClass('open')
+})
+
+$('body').on('click', function (e) {
+  if (!e.target.closest('.variants--float') && variantFloat.hasClass('open')) {
+    variantFloat.removeClass('open')
+  }
+})
+
 $('.variant-slider').slick({
   speed: 1000,
   dots: true,

@@ -763,10 +763,37 @@ a.crumbs__link:hover {
     width: 70px;
 }
 
+.desktop-only {
+    display: none;
+}
+
+.mobile-only.link-variants {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+}
 
 .variants {
     background-color: #fff;
     border: 1px solid transparent;
+}
+
+.variants--float {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255,255,255, .9);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all .3s;
+}
+
+.variants--float.open {
+    opacity: 1;
+    transform: none;
 }
 
 .variant-slider {

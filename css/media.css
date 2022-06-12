@@ -19,6 +19,11 @@
         font-size: 18px;
     }
 
+    .shipping-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .gift-slider__img img {
         max-width: none;
         width: 100%;
@@ -126,6 +131,13 @@
 }
 
 @media screen and (min-width: 769px) {
+    .desktop-only {
+        display: block;
+    }
+    .mobile-only {
+        display: none;
+    }
+
     .intro-card {
         position: relative;
     }
@@ -160,11 +172,6 @@
         margin-right: 30px;
     }
     
-    .shipping-bar {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .shipping-bar .shipping-bar__item {
         margin: 0;
     }
@@ -273,6 +280,9 @@
         position: relative;
         width: 50%;
         margin-left: auto;
+    }
+    .variants:not(.variants--float) {
+        display: none;
     }
     
 }
