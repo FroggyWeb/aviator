@@ -49,7 +49,7 @@
 }
 
 body {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 :root {
@@ -411,7 +411,7 @@ a.crumbs__link:hover {
 
 .spec__subtitle {
     font-family: var(--f-bold);
-    font-size: 18px;
+    font-size: 1.15rem;
     margin: 0;
 }
 
@@ -605,7 +605,7 @@ a.crumbs__link:hover {
 
 .sideimg-slider__cnt {
     padding: 15vw 40px;
-    max-width: 550px;
+    max-width: 34rem;
     margin: auto;
 }
 
@@ -649,7 +649,7 @@ a.crumbs__link:hover {
     border: 1px solid #70F7E4;
     padding: 0.5em;
     margin: auto;
-    max-width: 800px;
+    max-width: 50rem;
     display: grid;
     gap: var(--lg);
     text-align: center;
@@ -693,7 +693,7 @@ a.crumbs__link:hover {
     order: -1
 }
 .tech__cnt {
-    max-width: 450px;
+    max-width: 28rem;
     margin: auto;
 }
 

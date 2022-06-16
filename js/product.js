@@ -124,13 +124,15 @@ $('.people-slider').slick({
   slidesToShow: 1,
   slide: '.sideimg-slider__item',
   mobileFirst: true,
-  responsive: [{
-    breakpoint: 767,
-    settings: {
-      arrows: true,
-      appendDots: '.people-slider .slider-dots',
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        arrows: true,
+        appendDots: '.people-slider .slider-dots',
+      }
     }
-  }]
+  ]
 });
 
 $('.video-slider').slick({

@@ -1,6 +1,6 @@
 @media screen and (min-width: 767px) {
     .btn {
-        font-size: 14px;
+        font-size: 1rem;
     }
     .spec__body {
         grid-template-columns: calc(50% + var(--lg)) 50%;
@@ -16,7 +16,7 @@
     }
 
     .more-clip__link {
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 
     .shipping-bar {
@@ -42,14 +42,14 @@
 
     .gift-slider__cnt-wrap {
         padding: 10vw 60px;
-        max-width: 580px;
+        max-width: 36.25rem;
         margin: auto;
     }
     .brandavia {
         padding: 40px 0 40%;
     }
     .brandavia__cnt p {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .sideimg-slider__item {
@@ -59,7 +59,7 @@
     }
     .sideimg-slider__cnt {
         padding: 10vw 40px;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .sideimg-slider__img {
         order: -1;
@@ -86,7 +86,7 @@
     .nightview__cnt {
         grid-template-columns: 1fr 1fr;
         text-align: left;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .nightview__cnt .nightview__cnt-col:nth-child(even) {
         text-align: right;
@@ -102,15 +102,15 @@
         align-items: center;
     }
     .tech__cnt {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .video__title {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     .life-slider__title {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
     .video__title {
         position: absolute;
@@ -182,10 +182,10 @@
 
 @media screen and (min-width:1023px) {
     .specification {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .specification__title {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
     .price {
         font-size: 24px;
@@ -201,13 +201,13 @@
        flex-basis: 250px;
     }
     .spec__title {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     .spec__txt p {
-        font-size: 18px;
+        font-size: 1.15rem;
     }
     .title {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
     .product-header__desktop {
         display: block;
@@ -303,5 +303,36 @@
     }
     .tech__body-rtl .tech__img {
         order: initial;
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    html {
+        font-size: 24px;
+    }
+    body {
+        font-size: 1rem;
+    }
+    .wrap-prod {
+        width: 80%;
+        max-width: none;
+    }
+    .crumbs {
+        font-size: 1rem;
+    }
+    .specification {
+        max-width: none;
+    }
+    .spec__item-main {
+        gap: 3rem;
+    }
+    .spec__txt-col {
+        flex: 50%;
+    }
+    .slider-cnt-center {
+        font-size: 1.25rem;
+    }
+    .brandavia__cnt {
+        max-width: 40rem;
     }
 }
